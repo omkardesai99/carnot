@@ -40,7 +40,7 @@ CORS_ALLOW_METHODS = (
 )
 
 CSRF_TRUSTED_ORIGINS = [
-    "django-server-production-ef28.up.railway.app",
+    "https://django-server-production-ef28.up.railway.app",
 ]
 # Application definition
 
