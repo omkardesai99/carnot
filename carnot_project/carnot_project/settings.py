@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [
     "django-server-production-ef28.up.railway.app",
 ]
 CORS_ALLOWED_ORIGINS = [
-    "django-server-production-ef28.up.railway.app",
+    "https://django-server-production-ef28.up.railway.app",
 ]
 CORS_ORIGIN_WHITELIST = [
     "https://django-server-production-ef28.up.railway.app",
