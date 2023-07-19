@@ -25,10 +25,6 @@ SECRET_KEY = "django-insecure-ewhl!xbbx%#0zc9dh*xn2n*t0+fj39kja8ocsvw1ndqp3=aqsg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://django-server-production-ef28.up.railway.app",
-]
-
 ALLOWED_HOSTS = [
     "django-server-production-ef28.up.railway.app",
 ]
@@ -39,13 +35,9 @@ CORS_ORIGIN_WHITELIST = [
     "https://django-server-production-ef28.up.railway.app",
 ]
 
-CORS_ALLOWED_ORIGIN_REGEXES = [
-    "https://django-server-production-ef28.up.railway.app",
-]
-# CORS_ALLOW_ALL_ORIGINS = (
-#     True  # If this is used then `CORS_ALLOWED_ORIGINS` will not have any effect
-# )
+# CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
+
 # Application definition
 
 INSTALLED_APPS = [
