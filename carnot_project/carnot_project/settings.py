@@ -30,10 +30,10 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 ALLOWED_HOSTS = [
-    "https://django-server-production-ef28.up.railway.app",
+    "django-server-production-ef28.up.railway.app",
 ]
 CORS_ALLOWED_ORIGINS = [
-    "https://django-server-production-ef28.up.railway.app",
+    "django-server-production-ef28.up.railway.app",
 ]
 CORS_ORIGIN_WHITELIST = [
     "https://django-server-production-ef28.up.railway.app",
