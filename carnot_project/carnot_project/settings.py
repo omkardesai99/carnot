@@ -27,7 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "django-server-production-ef28.up.railway.app",
+    "localhost",
+    "127.0.0.1",
 ]
+
+ALLOWED_HOSTS = [".vercel.app"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_METHODS = (
