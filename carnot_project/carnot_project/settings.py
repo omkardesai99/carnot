@@ -25,28 +25,7 @@ SECRET_KEY = "django-insecure-ewhl!xbbx%#0zc9dh*xn2n*t0+fj39kja8ocsvw1ndqp3=aqsg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    "django-server-production-ef28.up.railway.app",
-    "localhost",
-    "127.0.0.1",
-]
-
 ALLOWED_HOSTS = [".vercel.app"]
-
-CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOW_METHODS = (
-    "DELETE",
-    "GET",
-    "OPTIONS",
-    "PATCH",
-    "POST",
-    "PUT",
-)
-
-CSRF_TRUSTED_ORIGINS = [
-    "https://django-server-production-ef28.up.railway.app",
-]
-# Application definition
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -57,11 +36,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "api",
     "rest_framework",
-    "corsheaders",
 ]
 
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
