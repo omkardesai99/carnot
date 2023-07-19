@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 
 CSRF_TRUSTED_ORIGINS = [
     "*",
+    "https://django-server-production-ef28.up.railway.app/",
 ]
 # Application definition
 
