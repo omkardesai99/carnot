@@ -4,6 +4,7 @@ from api.views import (
     device_latest_detail_api,
     device_start_end_location,
     device_start_end_time_and_location,
+    get_all_redis_data,
 )
 
 urlpatterns = [
@@ -23,4 +24,5 @@ urlpatterns = [
         device_start_end_time_and_location,
         name="device_start_end_time_and_location",
     ),
+    path("get_all_redis_data", get_all_redis_data, name="get_all_redis_data"),
 ]

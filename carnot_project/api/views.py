@@ -125,3 +125,18 @@ def device_start_end_time_and_location(request, pk, starttime, endtime):
         return Response(result_list)
     else:
         Response(status=status.HTTP_404_NOT_FOUND)
+
+
+@api_view(["GET"])
+def get_all_redis_data(request):
+    values = cache.mget(cache.keys())
+    keys = cache.keys()
+    results = {}
+    for row in zip(keys, values):
+        k = row[0].decode("ascii")
+        try:
+            v = json.loads(row[1])
+        except:
+            v = row[1].decode("ascii")
+        results[k] = v
+    return Response(results)
