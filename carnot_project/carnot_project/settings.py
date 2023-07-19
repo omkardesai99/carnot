@@ -35,6 +35,7 @@ CORS_ORIGIN_WHITELIST = [
     "https://django-server-production-ef28.up.railway.app",
 ]
 
+CORS_REPLACE_HTTPS_REFERER = True
 # CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
@@ -62,7 +63,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
+    # "django.middleware.csrf.CsrfViewMiddleware",
 ]
 
 ROOT_URLCONF = "carnot_project.urls"
