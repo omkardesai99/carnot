@@ -25,9 +25,10 @@ SECRET_KEY = "django-insecure-ewhl!xbbx%#0zc9dh*xn2n*t0+fj39kja8ocsvw1ndqp3=aqsg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    "django-server-production-ef28.up.railway.app",
-]
+ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = [
+#     "django-server-production-ef28.up.railway.app",
+# ]
 CORS_ALLOWED_ORIGINS = [
     "https://django-server-production-ef28.up.railway.app",
 ]
