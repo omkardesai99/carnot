@@ -18,6 +18,10 @@ import json
 cache = redis.Redis(host="localhost", port=6379, db=0)
 
 
+def your_view(request):
+    return Response(request.headers)
+
+
 def row_details(object):
     results = {}
     results["device_fk_id"] = object.device_fk_id
