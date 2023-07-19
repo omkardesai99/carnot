@@ -25,21 +25,23 @@ SECRET_KEY = "django-insecure-ewhl!xbbx%#0zc9dh*xn2n*t0+fj39kja8ocsvw1ndqp3=aqsg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
-# ALLOWED_HOSTS = [
-#     "django-server-production-ef28.up.railway.app",
-# ]
-# CORS_ALLOWED_ORIGINS = [
-#     "https://django-server-production-ef28.up.railway.app",
-# ]
-CORS_ORIGIN_WHITELIST = [
-    "https://django-server-production-ef28.up.railway.app",
+ALLOWED_HOSTS = [
+    "django-server-production-ef28.up.railway.app",
 ]
 
-# CORS_REPLACE_HTTPS_REFERER = True
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS = (
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+)
 
+CSRF_TRUSTED_ORIGINS = [
+    "django-server-production-ef28.up.railway.app",
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -51,20 +53,18 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "api",
     "rest_framework",
-    # "whitenoise.runserver_nostatic",
     "corsheaders",
 ]
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
-    # "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
 ]
 
 ROOT_URLCONF = "carnot_project.urls"
