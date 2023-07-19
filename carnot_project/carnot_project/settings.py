@@ -29,15 +29,15 @@ ALLOWED_HOSTS = ["*"]
 # ALLOWED_HOSTS = [
 #     "django-server-production-ef28.up.railway.app",
 # ]
-CORS_ALLOWED_ORIGINS = [
-    "https://django-server-production-ef28.up.railway.app",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "https://django-server-production-ef28.up.railway.app",
+# ]
 CORS_ORIGIN_WHITELIST = [
     "https://django-server-production-ef28.up.railway.app",
 ]
 
 # CORS_REPLACE_HTTPS_REFERER = True
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
 # Application definition
@@ -51,14 +51,14 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "api",
     "rest_framework",
-    "whitenoise.runserver_nostatic",
+    # "whitenoise.runserver_nostatic",
     "corsheaders",
 ]
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    # "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",

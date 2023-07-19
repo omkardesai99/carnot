@@ -1,6 +1,5 @@
 from django.urls import path
 from api.views import (
-    your_view,
     url_list,
     device_latest_detail_api,
     device_start_end_location,
@@ -8,7 +7,6 @@ from api.views import (
 )
 
 urlpatterns = [
-    path("your_view", your_view, name="your_view"),
     path("", url_list, name="list of all api's"),
     path(
         "device_latest_detail_api/<int:pk>",
