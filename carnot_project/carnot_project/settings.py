@@ -82,8 +82,8 @@ WSGI_APPLICATION = "carnot_project.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "carnot_db",
-        "USER": "omkar",
+        "NAME": "carnot",
+        "USER": "carnot",
         "PASSWORD": "123",
         "HOST": "localhost",
         "PORT": "5432",
