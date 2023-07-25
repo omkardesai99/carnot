@@ -57,6 +57,7 @@ def url_list(request):
         "example of device_start_end_location": "api/device_start_end_location/25029",
         "device_start_end_time_and_location": "api/device_start_end_time_and_location/<int:pk>/<str:starttime>/<str:endtime>",
         "example of device_start_end_time_and_location": "api/device_start_end_time_and_location/25029/2021-10-23T14:07:50.67886Z/2021-10-23T14:08:08.5984Z",
+        "get_all_redis_data": "api/get_all_redis_data"
     }
     return Response(list)
 
